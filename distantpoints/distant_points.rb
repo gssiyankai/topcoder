@@ -1,4 +1,4 @@
-class DistancePoints
+class DistantPoints
   
   def self.getKth(n, k)
     
