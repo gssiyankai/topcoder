@@ -9,12 +9,11 @@ class DistancePoints
               }
            }
            
-    first_point = grid[0][0]
     marked_points = []
     unmarked_points = grid.flatten
       
     (1..k).each { |kth|
-      point = unmarked_points.reduce(first_point) { |max_point, next_point|
+      point = unmarked_points.reduce { |max_point, next_point|
         if(max_point.score < next_point.score)
           next_point
         else
